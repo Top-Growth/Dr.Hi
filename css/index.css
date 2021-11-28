@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.navbar{
+    padding: 10px;
+    position: sticky;
+    background-color: #ABEBC6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4em;
+    align-items: center;
+}
+.burgar{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+.burgar:hover{
+    transform: scale(1.1);
+    border: none;
+}
+
+.burgar>span{
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+.logo-text{
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 1em;
+    color: black;
+    text-decoration:none;
+}
+.logo-text:hover{
+    color: blue;
+}
+
+
+.poster{
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+}
+.logo{
+    width: 30vw;
+    height: 30vw;
+    margin: 30px 0px -60px 0px;
+    filter: contrast(150%) drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.671));
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate{
+    
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(0deg);}
+}
+
+.box1 h2{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.help-text{
+    margin: 6em 0em 0em 2em;
+    width: 70vw;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.navbar2{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.see-more{
+    font-size: large;
+    padding-right: 20px;
+    color: blue;
+    
+}
+.see-more:hover{
+    color: red;
+}
+
+.avail{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+.dr-img{
+    padding: 0.7em;
+}
+.card-link{
+    border-radius: 4em;
+    transition-duration:0.5s;
+}
+.card-link:hover{
+    transform: scale(1.02);
+    box-shadow: 3px 3px 30px gray;  
+}
+.card-text{
+    color: black;
+    text-decoration: none !important;
+    font-size: 15px;
+    padding: 1em;
+}
+.mycard{
+    border-radius: 4em;
+    background-color: #ABEBC6;
+}
+
+.book{
+    padding: 1em 2em;
+    background-color: #ABEBC6;
+}
+form{
+    
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+form *{
+    margin:10px 10px;
+    height: 3em;
+    padding: 5px;
+    border-radius: 1.5em;
+    
+}
+
+.book-nae{
+    display: block;
+    margin: 2em auto;
+}
+
+#state,#city{
+    width: 30vw;
+    display: block;
+}
+#country{
+    width: 20vw;
+    display: block;
+}
+#hname{
+    width: 60vw;
+    display: block;
+}
+#submit{
+    width: 15vw;
+    background-color: lightblue;
+    margin-left: 70em;
+    transition-duration: 0.7s;
+}
+#submit:hover{
+    border: 2px solid green;
+    transform: scale(1.1);
+}
+#fname,#lname{
+    width: 40vw;
+    padding: 20px 20px;
+    float: left;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: lightgray;
+}
+footer .left{
+    width: 30vw;
+}
+footer .right{
+    width: 30vw;
+}
+footer .midal{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+.myoffcan a{
+    display: block;
+    padding: 1em;
+    width: 70%;
+    height: 4em;
+    color: black;
+    background-color: #ABEBC6;
+    margin: 3em auto;
+    border: 1px solid green;
+    border-radius: 2em;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+.myoffcan a:hover{
+    transform: scale(1.1);
+}
+.mybg{
+    background-color: #ABEBC6;
+}
+
